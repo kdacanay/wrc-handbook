@@ -5,9 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex,nofollow,noarchive" />
   <title>Policies & Procedures — Downloads</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#f8f9fb;color:#111}
+    header{background:#fff200;border-bottom:3px solid #000;padding:18px}
+    h1{margin:0;font-size:clamp(22px,3vw,30px)}
+    .wrap{max-width:960px;margin:0 auto;padding:22px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px}
+    .title{font-weight:700;margin-bottom:6px}
+    .meta{font-size:13px;color:#6b7280;margin-bottom:10px}
+    .row{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 12px;border-radius:10px;border:1px solid #e5e7eb;text-decoration:none}
+    .btn.primary{background:#111;color:#fff}
+    .btn.secondary{background:#fff;color:#111}
+  </style>
 </head>
 <body>
-  <h1>Policies & Procedures — Downloads</h1>
-  <p>Add PDF buttons here once you upload files into <code>docs/policies/</code>.</p>
+  <header><h1>Policies & Procedures — Downloads</h1></header>
+  <main class="wrap">
+    <section class="grid">
+
+      <!-- Duplicate a block for each PDF. Filenames must exist in /docs/policies/ -->
+      <article class="card">
+        <div class="title">Employee Handbook (2025)</div>
+        <div class="meta">PDF · Updated Aug 1, 2025</div>
+        <div class="row">
+          <a class="btn primary" href="./policies/Employee_Handbook_2025.pdf" download>Download PDF</a>
+          <a class="btn secondary" href="./policies/Employee_Handbook_2025.pdf" target="_blank" rel="noopener">View in Browser</a>
+        </div>
+      </article>
+
+      <!-- Add more cards here -->
+
+    </section>
+  </main>
 </body>
 </html>
+
